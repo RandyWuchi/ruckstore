@@ -1,5 +1,4 @@
-/* eslint-disable no-unused-vars */
-export const sectionsData = [
+const SECTIONS_DATA = [
   {
     title: 'hats',
     imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
@@ -33,3 +32,5 @@ export const sectionsData = [
     linkUrl: 'shop/mens',
   },
 ];
+
+export default SECTIONS_DATA;
