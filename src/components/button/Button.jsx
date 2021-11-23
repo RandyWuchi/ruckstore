@@ -1,8 +1,11 @@
 import './button.scss';
 
-const Button = ({ children, ...otherButtonProps }) => {
+const Button = ({ children, isGoogleSignIn, ...otherButtonProps }) => {
   return (
-    <button className="button" {...otherButtonProps}>
+    <button
+      className={`${isGoogleSignIn ? 'google-sign-in' : ''} button`}
+      {...otherButtonProps}
+    >
       {children}
     </button>
   );

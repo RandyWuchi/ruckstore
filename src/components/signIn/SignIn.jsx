@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Button, FormInput } from '..';
+import { signInWithGoogle } from '../../firebase/firebase';
 
 import './signIn.scss';
 
@@ -36,7 +37,12 @@ const SignIn = () => {
           onChange={(e) => setPassword(e.target.value)}
         />
 
-        <Button type="submit">Sign in</Button>
+        <div className="buttons">
+          <Button type="submit">SIGN IN</Button>
+          <Button onClick={signInWithGoogle} isGoogleSignIn>
+            SIGN IN WITH GOOGLE
+          </Button>
+        </div>
       </form>
     </div>
   );
