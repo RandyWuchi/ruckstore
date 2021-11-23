@@ -1,10 +1,11 @@
-import { SignIn } from '../../components';
+import { SignIn, SignUp } from '../../components';
 import './auth.scss';
 
 const Auth = () => {
   return (
-    <div>
+    <div className="auth">
       <SignIn />
+      <SignUp />
     </div>
   );
 };

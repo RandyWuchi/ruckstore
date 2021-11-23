@@ -4,5 +4,6 @@ export { default as PreviewCollection } from './previewCollection/PreviewCollect
 export { default as ItemCollection } from './itemCollection/ItemCollection';
 export { default as Header } from './Header/Header';
 export { default as SignIn } from './signIn/SignIn';
+export { default as SignUp } from './signUp/SignUp';
 export { default as FormInput } from './formInput/FormInput';
 export { default as Button } from './button/Button';
